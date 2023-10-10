@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-pale-blue: #e0e8ff;
+    --color-bright-blue: #3829e0;
+    --color-very-pale-blue: #f5f7ff;
+    --color-desaturated-blue: #7280a7;
+    --color-dark-blue: #1f2f56;
+    --color-white: #ffffff;
+    
+    --color-hover1: #7169d3;
+    
+    --font-red-hat-display: 'Red Hat Display';
+}
+
+body {
+    font-family: var(--font-red-hat-display);
+    background-color: var(--color-pale-blue);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--color-white);
+    padding:0;
+    margin: 1rem 1.5rem;
+    border-radius: 1.5rem;
+    max-width: 330px;
+}
+
+.main-img {
+    width: 100%;
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.main-h1 {
+    font-size: 1.3rem;
+    font-weight: 900;
+    padding: 1.5rem 0 1rem;
+    color: var(--color-dark-blue);
+}
+
+.main-p {
+    font-size: .9rem;
+    line-height: 20px;
+    padding: 0 2.5rem;
+    color: var(--color-desaturated-blue);
+    font-weight: 500;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-very-pale-blue);
+    width: 85%;
+    margin: 1.5rem 0 1rem;
+    border-radius: .8rem;
+}
+
+.price-img {
+    padding: 1rem;
+}
+
+.price-text {
+    margin-right: auto;
+}
+
+.price-text-h2, .price-text-p {
+    font-size: .9rem;
+}
+
+.price-text-p {
+    color: var(--color-desaturated-blue);
+}
+
+.price > a {
+    color: var(--color-bright-blue);
+    padding: 0 1rem;
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.price > a:hover {
+    color: var(--color-hover1);
+    text-decoration: none;
+}
+
+.payment {
+    text-decoration: none;
+    background-color: var(--color-bright-blue);
+    color: var(--color-white);
+    width: 85%;
+    padding: .8rem;
+    border-radius: .8rem;
+    font-weight: 700;
+}
+
+.payment:hover {
+    background-color: var(--color-hover1);
+}
+
+.cancel {
+    font-size: .9rem;
+    font-weight: 900;
+    color: var(--color-desaturated-blue);
+    padding: 1rem 0 2rem;
+}
+
+.cancel:hover {
+    color: var(--color-dark-blue);
+    cursor: pointer;
+}
+
+footer {
+    font-size: .7rem;
+    text-align: center;
+    padding: 0 0 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        justify-content: center;
+    }
+}
+
+
